@@ -12,38 +12,51 @@
   <style>
     body {
       background-color: hsl(212, 45%, 89%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
     }
     .qr-bg {
-      width: 25%;
+      width: 300px;
       margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       background-color: #FFF;
-      padding: 1%;
+      padding: 10px;
       border-radius: 25px;
-      margin: 50px auto;
+      margin-bottom: 50px;
+      margin-top: 10%;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     img {
-      width: 95%;
-      height: 50%;
-      margin-bottom: -10px;
-      padding: 0%;
+      object-fit: contain;
+      width: 100%;
+      padding: 15px;
     }
-    h1, h3 {
-      text-align: center;
-      width: 90%;
+
+    h1 {
+      font-size: 27px;
     }
+
     h3 {
-      width: 85%;
-      color: rgba(0, 0, 0, 0.7);
-      margin-top: 5px;
+      font-size: 18px;
     }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    @media screen and (max-width: 375px) {
+    /* @media screen and (max-width: 375px) {
       .qr-bg {
         width: 85%;
         margin: auto;
@@ -60,9 +73,9 @@
         height: 50%;
         margin-bottom: -10px;
       }
-    }
+    } */
 
-    @media screen and (min-width: 375px) {
+    /* @media screen and (min-width: 375px) {
       .qr-bg {
         width: 85%;
         margin: auto;
@@ -98,7 +111,7 @@
         margin-bottom: -10px;
       }
     } */
-    @media screen and (min-width: 750px) {
+    /* @media screen and (min-width: 750px) {
       .qr-bg {
       width: 25%;
       margin: auto;
@@ -117,19 +130,18 @@
       margin-bottom: -10px;
       padding: 0%;
     }
-    }
+    } */ */
   </style>
 </head>
 <body>
   <div class="qr-bg">
-    <figure>
       <img src="./images/image-qr-code.png">
-      <figcaption></figcaption>
-    </figure>
-    <h1>Improve your front-end skills by building projects</h1>
-    <h3>Scan the QR code to visit Frontend Mentor and take your coding
-      skills to the next level.
-    </h3>
+    <div class="details">
+      <h1>Improve your front-end skills by building projects</h1>
+      <h3>Scan the QR code to visit Frontend Mentor and take your coding
+        skills to the next level.
+      </h3>
+    </div>
   </div>
 
   
